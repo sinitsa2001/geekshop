@@ -1,0 +1,59 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+ <body>
+{#<h1>{{ title | title }}</h1>#}
+<h4>{{ username }}</h4>
+<h3>Your products</h3>
+{% for product in products %}
+    <p>{{ product.name }} | {{ product.price }}</p>
+{% endfor %}
+{#{% if promotion %}#}
+{% if promotion_products %}
+    <h3 style='color:red;'>Sale</h3>
+{% for product_promotion in promotion_products %}
+    <p>{{ product_promotion.name }} | {{ product_promotion.price }}</p>
+    {% endfor %}
+{% else %}
+    <h5 style="color :blue;">No sale now</h5>
+{% endif %}
+{% block time%}{% endblock %}
+{#<script type="text/javascript">#}
+{#    document.write(Date());#}
+{#</script>#}
+</body>
+
+{% endblock %}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{##}
+{#    <title>{{ title | title }}</title>#}
+{#</head>#}
+{#<body>#}
+{#<h1>{{ title | title }}</h1>#}
+{#<h4>{{ username }}</h4>#}
+{#<h3>Your products</h3>#}
+{#{% for product in products %}#}
+{#    <p>{{ product.name }} | {{ product.price }}</p>#}
+{#{% endfor %}#}
+{#{% if promotion %}#}
+{#{% if promotion_products %}#}
+{#    <h3 style='color:red;'>Sale</h3>#}
+{#{% for product_promotion in promotion_products %}#}
+{#    <p>{{ product_promotion.name }} | {{ product_promotion.price }}</p>#}
+{#    {% endfor %}#}
+{#{% else %}#}
+{#    <h5 style="color :blue;">No sale now</h5>#}
+{#{% endif %}#}
+{#{% block time%}{% endblock %}#}
+{#<script type="text/javascript">#}
+{#    document.write(Date());#}
+{#</script>#}
+{#</body>#}
+{#</html>#}

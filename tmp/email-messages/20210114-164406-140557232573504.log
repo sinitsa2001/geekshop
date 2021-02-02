@@ -1,0 +1,13 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0L/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IGRqYW5nbzE=?=
+From: django@geekbrains.local
+To: dj1@gb.local
+Date: Thu, 14 Jan 2021 13:44:06 -0000
+Message-ID: <161063184690.64267.6010149611403920250@MacBook-Pro-MOBI-2.local>
+
+Для подтверждения перейдите по ссылке: http://localhost:8000/auth/verify/dj1@gb.local/82814a1d28ba095cf18bc263d4305f56d5319fe2
+-------------------------------------------------------------------------------
