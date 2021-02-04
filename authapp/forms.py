@@ -1,7 +1,7 @@
 import hashlib
 import random
 
-import salt as salt
+# import salt as salt
 from django.contrib.auth.forms import AuthenticationForm,UserCreationForm,UserChangeForm
 from django import forms
 from authapp.models import User, UserProfile
